@@ -1,0 +1,43 @@
+Scenario : Travelling to LA
+Description : A tourist is trying to find the cheapest flight to LA.
+
+
+object : tourist 
+state : name, city
+behaviour: visitwebsite(), findcheapestflightLA()
+
+object : OnlineTravelBookingWebsite
+state : group of  flight details
+behaviour : displayflights(), ComparePrice()
+
+object : flight
+state: name , price
+behaviour : getname(), getprice().
+
+class tourist {
+string name;
+string city;
+void visitwebsite(OnlineTravelBookingWebsite);
+Flight findcheapestflightLA(Flight[] flight);
+}
+
+class OnlineTravelBookingwebsite{
+Flight[] flights;
+Flight[] displaysavailabeflights;
+Void ComparePrice()
+}
+
+class flight{
+string name'
+float price;
+float getprice;
+string getname;
+}
+
+vishaal.visitwebsite(TravelOcity);
+Flight[] flight =TravelOcity.displaysAvailabeFlights;
+Flight flight = vishaal.findthecheapestflighttoLA;
+Vishaal.ComparePrice(flight)
+};
+}
+
